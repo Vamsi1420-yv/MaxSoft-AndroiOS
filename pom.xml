@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    
+
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.maxsoft.androios</groupId>
@@ -33,7 +33,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Surefire plugin for running TestNG/JUnit tests -->
+            <!-- Surefire plugin to run TestNG/JUnit -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -43,58 +43,68 @@
     </build>
 
     <dependencies>
-        <!-- Gauge for BDD -->
+        <!-- Gauge for BDD testing -->
         <dependency>
             <groupId>com.thoughtworks.gauge</groupId>
             <artifactId>gauge-java</artifactId>
             <version>0.6.5</version>
         </dependency>
 
-        <!-- Selenium for automation -->
+        <!-- Selenium for browser automation -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>2.46.0</version>
         </dependency>
 
-        <!-- TestNG for testing -->
+        <!-- TestNG framework -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>6.11</version>
         </dependency>
 
-        <!-- Appium for mobile testing -->
+        <!-- Appium for mobile automation -->
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
             <version>4.1.2</version>
         </dependency>
 
-        <!-- JUnit for additional testing -->
+        <!-- JUnit support -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
         </dependency>
 
-        <!-- Apache POI for Excel/Word handling -->
+        <!-- Apache POI for Excel file processing -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
             <version>3.15</version>
         </dependency>
 
-        <!-- ✅ Tesseract OCR with working native bindings -->
+        <!-- Tesseract OCR core library -->
         <dependency>
             <groupId>org.bytedeco</groupId>
             <artifactId>tesseract</artifactId>
             <version>5.3.1-1.5.8</version>
         </dependency>
+
+        <!-- Tesseract native binaries -->
         <dependency>
             <groupId>org.bytedeco</groupId>
             <artifactId>tesseract-platform</artifactId>
             <version>5.3.1-1.5.8</version>
         </dependency>
     </dependencies>
+
+    <repositories>
+        <!-- Bytedeco repo for Tesseract artifacts -->
+        <repository>
+            <id>bytedeco</id>
+            <url>https://raw.githubusercontent.com/bytedeco/javacpp-presets/master/artifact</url>
+        </repository>
+    </repositories>
 </project>
