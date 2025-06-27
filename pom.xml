@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    
+
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.maxsoft.androios</groupId>
@@ -40,7 +40,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Surefire Plugin (for TestNG & JUnit tests) -->
+            <!-- Surefire Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -50,14 +50,14 @@
     </build>
 
     <dependencies>
-        <!-- Gauge (if required by project) -->
+        <!-- Gauge -->
         <dependency>
             <groupId>com.thoughtworks.gauge</groupId>
             <artifactId>gauge-java</artifactId>
             <version>0.7.12</version>
         </dependency>
 
-        <!-- Selenium (Updated version) -->
+        <!-- Selenium -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
@@ -94,7 +94,7 @@
             <version>5.2.3</version>
         </dependency>
 
-        <!-- ✅ Tesseract OCR & Leptonica (ByteDeco) -->
+        <!-- ByteDeco Tesseract OCR and Leptonica -->
         <dependency>
             <groupId>org.bytedeco</groupId>
             <artifactId>tesseract</artifactId>
