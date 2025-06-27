@@ -49,38 +49,33 @@
             <artifactId>gauge-java</artifactId>
             <version>0.6.5</version>
         </dependency>
-
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>2.46.0</version>
         </dependency>
-
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>6.11</version>
         </dependency>
-
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
             <version>4.1.2</version>
         </dependency>
-
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
         </dependency>
-
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
             <version>3.15</version>
         </dependency>
 
-        <!-- ✅ Working Tesseract OCR Dependencies -->
+        <!-- ✅ Working Tesseract OCR version -->
         <dependency>
             <groupId>org.bytedeco</groupId>
             <artifactId>tesseract</artifactId>
